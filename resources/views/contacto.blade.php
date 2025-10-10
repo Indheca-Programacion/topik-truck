@@ -1,48 +1,96 @@
 @extends('layouts.main')
 
-@section('title', 'Contacto | LabQuimic')
+@section('title', 'Contacto | Topick Trucks')
 
 @section('content')
-  <h2 class="text-3xl font-bold text-center mb-6">Contáctanos</h2>
+<!-- CTA Contacto: Solicita tu mantenimiento -->
+<section id="contacto" class="py-20 bg-slate-50">
+  <div class="container mx-auto px-4">
+    <div class="rounded-3xl border border-slate-200 bg-white p-10 shadow-soft">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        
+        <!-- Información -->
+        <div>
+          <h2 class="text-3xl font-extrabold tracking-tight">
+            Solicita tu mantenimiento certificado
+          </h2>
+          <p class="mt-3 text-slate-600">
+            Cuéntanos sobre tu motor o maquinaria y nuestro equipo programará tu servicio de mantenimiento o reparación en menos de 24 horas.
+          </p>
+          <div class="mt-6 space-y-2 text-sm text-slate-700">
+            <div class="flex items-center gap-2">
+              <span class="h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+              Técnicos certificados y experiencia garantizada
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="h-2.5 w-2.5 rounded-full bg-indigo-500"></span>
+              Garantía de servicio y resultados confiables
+            </div>
+          </div>
+        </div>
+        
+        <!-- Formulario -->
+        <form class="grid gap-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <label class="grid gap-1 text-sm">
+              <span>Nombre</span>
+              <input
+                type="text"
+                required
+                class="rounded-xl border border-slate-300 bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-brand-500"
+                placeholder="Tu nombre"
+              />
+            </label>
+            <label class="grid gap-1 text-sm">
+              <span>Email</span>
+              <input
+                type="email"
+                required
+                class="rounded-xl border border-slate-300 bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-brand-500"
+                placeholder="tu@email.com"
+              />
+            </label>
+          </div>
 
-  @if(session('success'))
-    <div class="bg-green-100 text-green-800 p-4 rounded mb-6">
-      {{ session('success') }}
+          <label class="grid gap-1 text-sm">
+            <span>Servicio de interés</span>
+            <select
+              class="rounded-xl border border-slate-300 bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-brand-500"
+            >
+              <option>Mantenimiento preventivo</option>
+              <option>Reparación mayor</option>
+              <option>Diagnóstico de motor</option>
+              <option>Otros servicios de maquinaria</option>
+            </select>
+          </label>
+
+          <label class="grid gap-1 text-sm">
+            <span>Descripción del motor o maquinaria</span>
+            <textarea
+              rows="4"
+              class="rounded-xl border border-slate-300 bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-brand-500"
+              placeholder="Indica modelo, número de serie, problemas detectados..."
+            ></textarea>
+          </label>
+
+          <div class="flex items-center gap-3">
+            <button
+              type="submit"
+              class="inline-flex items-center rounded-xl bg-brand-600 px-5 py-3 font-semibold text-white shadow-soft hover:bg-brand-700"
+            >
+              Solicitar mantenimiento
+            </button>
+            <a
+              href="mailto:contacto@topicktrucks.com"
+              class="text-sm underline hover:no-underline"
+              >o escríbenos a contacto@topicktrucks.com</a
+            >
+          </div>
+        </form>
+
+      </div>
     </div>
-  @endif
+  </div>
+</section>
 
-  <form action="{{ route('contactar') }}" method="POST" class="bg-white shadow-md rounded-lg p-6 space-y-4 max-w-xl mx-auto">
-    @csrf
-
-    <div>
-      <label for="nombre" class="block text-sm font-medium">Nombre</label>
-      <input type="text" id="nombre" name="nombre" value="{{ old('nombre') }}" required
-             class="mt-1 w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-      @error('nombre')
-        <p class="text-red-600 text-sm mt-1">{{ $message }}</p>
-      @enderror
-    </div>
-
-    <div>
-      <label for="email" class="block text-sm font-medium">Correo electrónico</label>
-      <input type="email" id="email" name="email" value="{{ old('email') }}" required
-             class="mt-1 w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-      @error('email')
-        <p class="text-red-600 text-sm mt-1">{{ $message }}</p>
-      @enderror
-    </div>
-
-    <div>
-      <label for="mensaje" class="block text-sm font-medium">Mensaje</label>
-      <textarea id="mensaje" name="mensaje" rows="5" required
-                class="mt-1 w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">{{ old('mensaje') }}</textarea>
-      @error('mensaje')
-        <p class="text-red-600 text-sm mt-1">{{ $message }}</p>
-      @enderror
-    </div>
-
-    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded">
-      Enviar mensaje
-    </button>
-  </form>
 @endsection

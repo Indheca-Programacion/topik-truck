@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('home');
 Route::view('/contacto', 'contacto')->name('contacto');
+Route::view('/servicios', 'servicios')->name('servicios');
 
 Route::post('/contactar', function (\Illuminate\Http\Request $request) {
     $request->validate([

@@ -7,11 +7,7 @@
 
     
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>@yield('title', config('app.name', 'D&A Software R'))</title>
-    <meta
-      name="description"
-      content="DaSoftware: Desarrollo de software, sitios web y apps a medida. Creamos soluciones tecnológicas innovadoras, escalables y optimizadas para SEO en Google."
-    />
+    <title>@yield('title', config('app.name', 'Topik Trucks'))</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -51,16 +47,13 @@
               >A</span
             >
             <span class="font-extrabold text-lg tracking-tight"
-              >D&A Software R</span
+              >Topik Truck</span
             >
           </a>
           <nav class="hidden md:flex items-center gap-6 font-medium">
-            <a href="#servicios" class="hover:text-brand-600">Servicios</a>
-            <a href="#portafolio" class="hover:text-brand-600">Portafolio</a>
-            <a href="#proceso" class="hover:text-brand-600">Proceso</a>
-            <a href="#precios" class="hover:text-brand-600">Precios</a>
-            <a href="#nosotros" class="hover:text-brand-600">Nosotros</a>
-            <a href="#contacto" class="hover:text-brand-600">Contacto</a>
+            <a href="/" class="hover:text-brand-600">Inicio</a>
+            <a href="/servicios" class="hover:text-brand-600">Servicios</a>
+            <a href="/contacto" class="hover:text-brand-600">Contacto</a>
           </nav>
           <div class="flex items-center gap-3">
             <a
@@ -71,7 +64,7 @@
             <a
               href="#contacto"
               class="inline-flex items-center rounded-xl bg-brand-500 px-4 py-2 text-sm font-semibold text-white shadow-soft hover:bg-brand-600"
-              >Solicitar cotización</a
+              >Agendar Cita</a
             >
           </div>
         </div>
@@ -85,41 +78,71 @@
         @yield('content')
     </main>
 
-    <!-- Footer -->
-        <footer class="border-t border-slate-200 py-12 mt-16">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
-            
-            <!-- Logo y descripción -->
-            <div>
-            <h3 class="text-2xl font-bold text-slate-600">D&A Software R</h3>
-            <p class="mt-4 text-sm text-slate-500">Laboratorio especializado en análisis clínicos, de agua y alimentos. Resultados confiables y precisos, avalados por certificaciones.</p>
-            </div>
-
-            <!-- Información de contacto -->
-            <div>
-            <h4 class="text-lg font-semibold text-slate-600 mb-4">Contacto</h4>
-            <p class="text-slate-600">📍 Cjon. Francisco X. Clavijero No. 234, Centro, 91700 Veracruz, Ver.</p>
-            <p class="text-slate-600">📞 (+52) 229-229-0382</p>
-            <p class="text-slate-600">✉️ rrodriguez@dasoftwarer.com</p>
-            <p class="text-slate-600 mt-2">🕒 Lunes a Viernes: 8:00 am - 6:00 pm</p>
-            </div>
-
-            <!-- Redes sociales -->
-            <div>
-            <h4 class="text-lg font-semibold text-slate-600 mb-4">Síguenos</h4>
-            <div class="flex space-x-4">
-                <a href="#" class="hover:text-cyan-400 transition">Facebook</a>
-                <a href="#" class="hover:text-cyan-400 transition">Instagram</a>
-                <a href="#" class="hover:text-cyan-400 transition">LinkedIn</a>
-            </div>
-            </div>
+    <footer class="border-t border-slate-200 py-12 mt-16 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+        
+        <!-- Logo y descripción -->
+        <div>
+          <h3 class="text-2xl font-bold text-slate-700 mb-2">Topik Trucks</h3>
+          <p class="text-slate-600 text-sm">
+            Taller especializado en mantenimiento y reparación de motores Diésel en Boca del Río, Veracruz. Calidad, confianza y resultados garantizados.
+          </p>
         </div>
 
-        <!-- Copy -->
-        <div class="text-center text-slate-600 text-sm mt-10 border-t border-gray-300 pt-6">
-            © {{ date('Y') }} D&A Software R. Todos los derechos reservados.
+        <!-- Contacto -->
+        <div>
+          <h4 class="text-lg font-semibold text-slate-700 mb-4">Contacto</h4>
+          <ul class="text-slate-600 text-sm space-y-2">
+            <li class="flex items-center gap-2">
+              <span>📍</span> Cjon. Francisco X. Clavijero No. 234, Boca del Río, Ver.
+            </li>
+            <li class="flex items-center gap-2">
+              <span>📞</span> (+52) 229-229-0382
+            </li>
+            <li class="flex items-center gap-2">
+              <span>✉️</span> contacto@topicktrucks.com
+            </li>
+            <li class="flex items-center gap-2">
+              <span>🕒</span> Lunes a Viernes: 8:00 am - 6:00 pm
+            </li>
+          </ul>
         </div>
+
+        <!-- Servicios rápidos -->
+        <div>
+          <h4 class="text-lg font-semibold text-slate-700 mb-4">Servicios</h4>
+          <ul class="text-slate-600 text-sm space-y-2">
+            <li><a href="#servicios" class="hover:text-brand-600 transition">Mantenimiento preventivo</a></li>
+            <li><a href="#servicios" class="hover:text-brand-600 transition">Reparaciones mayores</a></li>
+            <li><a href="#servicios" class="hover:text-brand-600 transition">Diagnóstico de motor</a></li>
+            <li><a href="#contacto" class="hover:text-brand-600 transition">Solicitar mantenimiento</a></li>
+          </ul>
+        </div>
+
+        <!-- Redes sociales -->
+        <div>
+          <h4 class="text-lg font-semibold text-slate-700 mb-4">Síguenos</h4>
+          <div class="flex space-x-4 text-slate-600">
+            <a href="#" class="hover:text-cyan-400 transition flex items-center gap-1">
+              <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="#" class="hover:text-pink-500 transition flex items-center gap-1">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="#" class="hover:text-blue-500 transition flex items-center gap-1">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copy -->
+      <div class="text-center text-slate-600 text-sm mt-10 border-t border-slate-300 pt-6">
+        © {{ date('Y') }} Topik Trucks. Todos los derechos reservados.
+      </div>
     </footer>
+
 
     @stack('scripts')
 
