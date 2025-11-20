@@ -21,9 +21,9 @@ jobs:
 
             cd ${{ secrets.WORK_DIR }}
             echo "📥 Actualizando repositorio..."
-            git fetch indheca-remote ${{ secrets.MAIN_BRANCH }}
+            git fetch origin ${{ secrets.MAIN_BRANCH }}
             git checkout ${{ secrets.MAIN_BRANCH }}
-            git pull indheca-remote ${{ secrets.MAIN_BRANCH }}
+            git pull origin ${{ secrets.MAIN_BRANCH }}
 
             composer i
             npm i
