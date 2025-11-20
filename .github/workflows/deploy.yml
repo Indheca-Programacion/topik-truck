@@ -19,11 +19,15 @@ jobs:
           script: |
             echo "Conexión exitosa al servidor"
 
-            # cd ${{ secrets.WORK_DIR }}
-            # echo "📥 Actualizando repositorio..."
-            # git fetch indheca-remote ${{ secrets.MAIN_BRANCH }}
-            # git checkout ${{ secrets.MAIN_BRANCH }}
-            # git pull indheca-remote ${{ secrets.MAIN_BRANCH }}
+            cd ${{ secrets.WORK_DIR }}
+            echo "📥 Actualizando repositorio..."
+            git fetch indheca-remote ${{ secrets.MAIN_BRANCH }}
+            git checkout ${{ secrets.MAIN_BRANCH }}
+            git pull indheca-remote ${{ secrets.MAIN_BRANCH }}
+
+            composer i
+            npm i
+            npm run build
 
             echo "✅ Despliegue completado en $HOSTNAME"
 
