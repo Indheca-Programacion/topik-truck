@@ -16,6 +16,7 @@
           <span class="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white px-3 py-1 text-xs font-semibold text-brand-700">
             <span class="h-2 w-2 rounded-full bg-brand-500"></span>
             Diagnóstico & Reparaciones Certificadas
+            JOSUE PEREZ
           </span>
 
           <!-- Título principal -->
