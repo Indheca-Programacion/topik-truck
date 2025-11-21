@@ -76,7 +76,7 @@
           <div class="flex items-center gap-3">
             <button
               type="submit"
-              class="inline-flex items-center rounded-xl bg-brand-600 px-5 py-3 font-semibold text-white shadow-soft hover:bg-brand-700"
+              class="inline-flex items-center rounded-xl bg-[#DC3545] px-5 py-3 font-semibold text-white shadow-soft hover:bg-brand-700"
             >
               Solicitar mantenimiento
             </button>

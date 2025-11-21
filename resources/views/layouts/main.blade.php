@@ -43,7 +43,7 @@
         <div class="flex items-center justify-between py-4">
           <a href="#" class="flex items-center gap-2">
             <span
-              class="inline-flex h-9 w-9 items-center justify-center rounded-2xl bg-brand-600 text-white font-bold shadow-soft"
+              class="inline-flex h-9 w-9 items-center justify-center rounded-2xl bg-[#DC3545] text-white font-bold shadow-soft"
               >A</span
             >
             <span class="font-extrabold text-lg tracking-tight"
@@ -51,14 +51,14 @@
             >
           </a>
           <nav class="hidden md:flex items-center gap-6 font-medium">
-            <a href="/" class="hover:text-brand-600">Inicio</a>
-            <a href="/servicios" class="hover:text-brand-600">Servicios</a>
-            <a href="/contacto" class="hover:text-brand-600">Contacto</a>
+            <a href="/" class="hover:text-[#DC3545]">Inicio</a>
+            <a href="/servicios" class="hover:text-[#DC3545]">Servicios</a>
+            <a href="/contacto" class="hover:text-[#DC3545]">Contacto</a>
           </nav>
           <div class="flex items-center gap-3">
             <a
               href="#contacto"
-              class="inline-flex items-center rounded-xl bg-brand-500 px-4 py-2 text-sm font-semibold text-white shadow-soft hover:bg-brand-600"
+              class="inline-flex items-center rounded-xl bg-[#DC3545] px-4 py-2 text-sm font-semibold text-white shadow-soft hover:bg-[#DC3552]"
               >Iniciar Sesión</a
             >
           </div>
@@ -107,10 +107,10 @@
         <div>
           <h4 class="text-lg font-semibold text-slate-700 mb-4">Servicios</h4>
           <ul class="text-slate-600 text-sm space-y-2">
-            <li><a href="#servicios" class="hover:text-brand-600 transition">Mantenimiento preventivo</a></li>
-            <li><a href="#servicios" class="hover:text-brand-600 transition">Reparaciones mayores</a></li>
-            <li><a href="#servicios" class="hover:text-brand-600 transition">Diagnóstico de motor</a></li>
-            <li><a href="#contacto" class="hover:text-brand-600 transition">Solicitar mantenimiento</a></li>
+            <li><a href="#servicios" class="hover:text-[#DC3545] transition">Mantenimiento preventivo</a></li>
+            <li><a href="#servicios" class="hover:text-[#DC3545] transition">Reparaciones mayores</a></li>
+            <li><a href="#servicios" class="hover:text-[#DC3545] transition">Diagnóstico de motor</a></li>
+            <li><a href="#contacto" class="hover:text-[#DC3545] transition">Solicitar mantenimiento</a></li>
           </ul>
         </div>
 
