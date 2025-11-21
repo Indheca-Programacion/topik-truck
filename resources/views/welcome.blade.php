@@ -279,62 +279,6 @@
     </div>
   </section>
 
-  <!-- Evidencia -->
-  <section id="evidencia" class="py-20 bg-slate-50">
-    <div class="container mx-auto px-4">
-      <div class="mx-auto max-w-3xl text-center">
-        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">
-          Evidencia
-        </h2>
-        <p class="mt-3 text-slate-600">
-          Algunos de nuestros trabajos realizados en motores Diésel y sistemas SCR.
-        </p>
-      </div>
-
-      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Tarjeta 1 -->
-        <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-soft">
-          <div class="aspect-[16/10] bg-slate-100">
-            <!-- Aquí puedes colocar la imagen real del motor o taller -->
-            <img src="img/motor-1.jpg" alt="Reparación de motor Diésel" class="w-full h-full object-cover"/>
-          </div>
-          <div class="p-5">
-            <h3 class="font-bold">Mantenimiento de Sistema SCR</h3>
-            <p class="mt-1 text-sm text-slate-600">
-              Limpieza y calibración del sistema de reducción de emisiones, asegurando eficiencia y durabilidad.
-            </p>
-          </div>
-        </article>
-
-        <!-- Tarjeta 2 -->
-        <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-soft">
-          <div class="aspect-[16/10] bg-slate-100">
-            <img src="img/motor-2.jpg" alt="Reparación mayor de motor Diésel" class="w-full h-full object-cover"/>
-          </div>
-          <div class="p-5">
-            <h3 class="font-bold">Reparaciones Mayores</h3>
-            <p class="mt-1 text-sm text-slate-600">
-              Reconstrucción completa de motores Diésel, reemplazo de componentes críticos y restauración del rendimiento original.
-            </p>
-          </div>
-        </article>
-
-        <!-- Tarjeta 3 -->
-        <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-soft">
-          <div class="aspect-[16/10] bg-slate-100">
-            <img src="img/motor-3.jpg" alt="Diagnóstico de motor Diésel" class="w-full h-full object-cover"/>
-          </div>
-          <div class="p-5">
-            <h3 class="font-bold">Diagnóstico de Motor</h3>
-            <p class="mt-1 text-sm text-slate-600">
-              Análisis completo para detectar fallas, optimizar consumo y prevenir averías futuras.
-            </p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
   <!-- Nosotros -->
   <section id="nosotros" class="py-20 bg-slate-50">
     <div class="container mx-auto px-4">
