@@ -286,7 +286,7 @@
         </div>
         <div class="aspect-[4/3] w-full rounded-3xl bg-slate-200 shadow-soft">
           <!-- Aquí puedes colocar una imagen real del taller o del equipo -->
-          <img src="img/taller-boca-del-rio.jpg" alt="Taller de mantenimiento y reparación de motores en Boca del Río" class="w-full h-full object-cover rounded-3xl"/>
+          <img src="https://t3.ftcdn.net/jpg/05/38/26/20/360_F_538262081_1332BdHkVmRezMbWh8Z2VpAKFUBAiJSw.jpg" alt="Taller de mantenimiento y reparación de motores en Boca del Río" class="w-full h-full object-cover rounded-3xl"/>
         </div>
       </div>
     </div>
