@@ -47,7 +47,7 @@
               >A</span
             >
             <span class="font-extrabold text-lg tracking-tight"
-              >Topik Truck</span
+              >Topik Trucks</span
             >
           </a>
           <nav class="hidden md:flex items-center gap-6 font-medium">
