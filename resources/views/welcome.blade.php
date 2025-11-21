@@ -8,7 +8,7 @@
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 -z-10 bg-gradient-to-b from-brand-50 via-white to-white"></div>
     <div class="container mx-auto px-4 py-20">
-      <div class="grid md:grid-cols-2 items-center gap-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
         
         <!-- Texto principal -->
         <div>
@@ -19,7 +19,7 @@
           </span>
 
           <!-- Título principal -->
-          <h1 class="mt-4 text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+          <h1 class="mt-4 text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
             Mantenimiento <span class="text-[#DC3545]">certificado</span> para <span class="text-[#DC3545]">Motores Diésel</span>
           </h1>
 
@@ -60,7 +60,7 @@
           <div class="aspect-[4/3] w-full rounded-3xl 
             bg-gradient-to-tr from-[#DC3545]/80 to-slate-100 
             shadow-soft border border-slate-200 p-4">
-            <div class="grid h-full w-full grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               
               <!-- Tarjeta 1: Motores atendidos -->
               <div class="rounded-2xl bg-white shadow-soft border border-slate-200 p-4 flex flex-col justify-between">
