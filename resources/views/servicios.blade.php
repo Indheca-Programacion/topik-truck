@@ -33,7 +33,7 @@
           <li>Calibración electrónica del sistema</li>
           <li>Optimización de eficiencia y emisiones</li>
         </ul>
-        <a href="#contacto" class="inline-flex items-center rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold hover:bg-brand-700 transition">
+        <a href="#contacto" class="inline-flex items-center rounded-xl bg-[#DC3545] px-6 py-3 text-white font-semibold hover:bg-brand-700 transition">
           Solicitar servicio
         </a>
       </div>
@@ -56,7 +56,7 @@
           <li>Rectificación y ajuste de cilindros</li>
           <li>Pruebas de rendimiento y eficiencia</li>
         </ul>
-        <a href="#contacto" class="inline-flex items-center rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold hover:bg-brand-700 transition">
+        <a href="#contacto" class="inline-flex items-center rounded-xl bg-[#DC3545] px-6 py-3 text-white font-semibold hover:bg-brand-700 transition">
           Solicitar servicio
         </a>
       </div>
@@ -79,7 +79,7 @@
           <li>Reporte de fallas y recomendaciones</li>
           <li>Prevención de fallas futuras</li>
         </ul>
-        <a href="#contacto" class="inline-flex items-center rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold hover:bg-brand-700 transition">
+        <a href="#contacto" class="inline-flex items-center rounded-xl bg-[#DC3545] px-6 py-3 text-white font-semibold hover:bg-brand-700 transition">
           Solicitar diagnóstico
         </a>
       </div>

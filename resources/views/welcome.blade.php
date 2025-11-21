@@ -20,7 +20,7 @@
 
           <!-- Título principal -->
           <h1 class="mt-4 text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
-            Mantenimiento <span class="text-brand-600">certificado</span> para <span class="text-brand-600">Motores Diésel</span>
+            Mantenimiento <span class="text-[#DC3545]">certificado</span> para <span class="text-[#DC3545]">Motores Diésel</span>
           </h1>
 
           <!-- Subtítulo / Beneficio -->
@@ -30,7 +30,7 @@
 
           <!-- Botones CTA -->
           <div class="mt-6 flex flex-wrap gap-3">
-            <a href="#contacto" class="inline-flex items-center rounded-xl bg-brand-600 px-5 py-3 font-semibold text-white shadow-soft hover:bg-brand-700">
+            <a href="#contacto" class="inline-flex items-center rounded-xl bg-[#DC3545] px-5 py-3 font-semibold text-white shadow-soft hover:bg-brand-700">
               Solicita tu mantenimiento
             </a>
             <a href="#servicios" class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 font-semibold hover:bg-slate-100">
@@ -57,14 +57,16 @@
 
         <!-- Imagen / Visual de Servicio de Mantenimiento -->
         <div class="relative">
-          <div class="aspect-[4/3] w-full rounded-3xl bg-gradient-to-tr from-slate-100 to-brand-100 shadow-soft border border-slate-200 p-4">
+          <div class="aspect-[4/3] w-full rounded-3xl 
+            bg-gradient-to-tr from-[#DC3545]/80 to-slate-100 
+            shadow-soft border border-slate-200 p-4">
             <div class="grid h-full w-full grid-cols-2 gap-4">
               
               <!-- Tarjeta 1: Motores atendidos -->
               <div class="rounded-2xl bg-white shadow-soft border border-slate-200 p-4 flex flex-col justify-between">
                 <div>
                   <div class="text-xs font-semibold text-slate-500">Motores atendidos</div>
-                  <div class="mt-2 text-2xl font-bold text-brand-600">+350</div>
+                  <div class="mt-2 text-2xl font-bold text-[#DC3545]">+350</div>
                 </div>
                 <div class="mt-4 text-sm text-slate-500">
                   Historial completo de motores Diésel atendidos con éxito
@@ -75,7 +77,7 @@
               <div class="rounded-2xl bg-white shadow-soft border border-slate-200 p-4 flex flex-col justify-between">
                 <div>
                   <div class="text-xs font-semibold text-slate-500">Tiempo promedio de diagnóstico</div>
-                  <div class="mt-2 text-2xl font-bold text-brand-600">24-48 hrs</div>
+                  <div class="mt-2 text-2xl font-bold text-[#DC3545]">24-48 hrs</div>
                 </div>
                 <div class="mt-4 text-sm text-slate-500">
                   Diagnóstico rápido y confiable de cada motor
@@ -86,7 +88,7 @@
               <div class="rounded-2xl bg-white shadow-soft border border-slate-200 p-4 flex flex-col justify-between">
                 <div>
                   <div class="text-xs font-semibold text-slate-500">Técnicos certificados</div>
-                  <div class="mt-2 text-2xl font-bold text-brand-600">+15 años</div>
+                  <div class="mt-2 text-2xl font-bold text-[#DC3545]">+15 años</div>
                 </div>
                 <div class="mt-4 text-sm text-slate-500">
                   Experiencia y profesionalismo garantizados en cada reparación
@@ -97,7 +99,7 @@
               <div class="rounded-2xl bg-white shadow-soft border border-slate-200 p-4 flex flex-col justify-between">
                 <div>
                   <div class="text-xs font-semibold text-slate-500">Garantía de servicio</div>
-                  <div class="mt-2 text-2xl font-bold text-brand-600">100%</div>
+                  <div class="mt-2 text-2xl font-bold text-[#DC3545]">100%</div>
                 </div>
                 <div class="mt-4 text-sm text-slate-500">
                   Todos nuestros servicios están respaldados por garantía de calidad y confianza
@@ -139,7 +141,7 @@
             </p>
             <a
               href="#contacto"
-              class="mt-4 inline-flex rounded-xl bg-brand-600 px-4 py-2 text-white font-semibold hover:bg-brand-700"
+              class="mt-4 inline-flex rounded-xl bg-[#DC3545] px-4 py-2 text-white font-semibold hover:bg-brand-700"
               >Solicitar servicio</a
             >
           </div>
@@ -160,7 +162,7 @@
             </p>
             <a
               href="#contacto"
-              class="mt-4 inline-flex rounded-xl bg-brand-600 px-4 py-2 text-white font-semibold hover:bg-brand-700"
+              class="mt-4 inline-flex rounded-xl bg-[#DC3545] px-4 py-2 text-white font-semibold hover:bg-brand-700"
               >Solicitar servicio</a
             >
           </div>
@@ -181,7 +183,7 @@
             </p>
             <a
               href="#contacto"
-              class="mt-4 inline-flex rounded-xl bg-brand-600 px-4 py-2 text-white font-semibold hover:bg-brand-700"
+              class="mt-4 inline-flex rounded-xl bg-[#DC3545] px-4 py-2 text-white font-semibold hover:bg-brand-700"
               >Solicitar diagnóstico</a
             >
           </div>
