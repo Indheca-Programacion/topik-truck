@@ -82,17 +82,6 @@
                 </div>
               </div>
 
-              <!-- Tarjeta 3: Satisfacción del cliente -->
-              <div class="col-span-2 rounded-2xl bg-white shadow-soft border border-slate-200 p-4 flex flex-col justify-between">
-                <div class="flex items-center justify-between">
-                  <div class="text-xs font-semibold text-slate-500">Clientes satisfechos</div>
-                  <div class="text-2xl font-bold text-emerald-600">99%</div>
-                </div>
-                <div class="mt-2 text-sm text-slate-500">
-                  Nuestro compromiso es ofrecer resultados de calidad y confianza en cada servicio
-                </div>
-              </div>
-
               <!-- Tarjeta 4: Técnicos certificados -->
               <div class="rounded-2xl bg-white shadow-soft border border-slate-200 p-4 flex flex-col justify-between">
                 <div>
@@ -205,28 +194,22 @@
   <section class="py-16">
     <div class="container mx-auto px-4">
       <div class="rounded-3xl bg-slate-900 text-white p-10 shadow-soft">
-        <div class="grid md:grid-cols-4 gap-6 text-center md:text-left">
-          <div>
-            <div class="text-3xl font-extrabold">+350</div>
-            <div class="mt-1 text-sm opacity-80">
+        <div class="grid md:grid-cols-3 gap-6 text-center md:text-left">
+          <div class="">
+            <div class="text-center text-3xl font-extrabold">+350</div>
+            <div class="text-center  mt-1 text-sm opacity-80">
               Motores Diésel atendidos
             </div>
           </div>
           <div>
-            <div class="text-3xl font-extrabold">99%</div>
-            <div class="mt-1 text-sm opacity-80">
-              Clientes satisfechos
-            </div>
-          </div>
-          <div>
-            <div class="text-3xl font-extrabold">24-48 hrs</div>
-            <div class="mt-1 text-sm opacity-80">
+            <div class="text-center  text-3xl font-extrabold">24-48 hrs</div>
+            <div class="text-center mt-1 text-sm opacity-80">
               Tiempo promedio de diagnóstico
             </div>
           </div>
           <div>
-            <div class="text-3xl font-extrabold">+15 años</div>
-            <div class="mt-1 text-sm opacity-80">
+            <div class="text-center  text-3xl font-extrabold">+15 años</div>
+            <div class="text-center  mt-1 text-sm opacity-80">
               Experiencia en mantenimiento Diésel
             </div>
           </div>
