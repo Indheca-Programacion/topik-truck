@@ -57,7 +57,6 @@
           </nav>
           <div class="flex items-center gap-3">
             <a
-              href="#contacto"
               class="inline-flex items-center rounded-xl bg-[#DC3545] px-4 py-2 text-sm font-semibold text-white shadow-soft hover:bg-[#DC3552]"
               >Iniciar Sesión</a
             >
