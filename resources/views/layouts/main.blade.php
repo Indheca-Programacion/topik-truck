@@ -58,13 +58,8 @@
           <div class="flex items-center gap-3">
             <a
               href="#contacto"
-              class="hidden sm:inline-flex items-center rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold hover:bg-slate-100"
-              >Agenda una llamada</a
-            >
-            <a
-              href="#contacto"
               class="inline-flex items-center rounded-xl bg-brand-500 px-4 py-2 text-sm font-semibold text-white shadow-soft hover:bg-brand-600"
-              >Agendar Cita</a
+              >Iniciar Sesión</a
             >
           </div>
         </div>
@@ -79,7 +74,7 @@
     </main>
 
     <footer class="border-t border-slate-200 py-12 mt-16 bg-slate-50">
-      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
         
         <!-- Logo y descripción -->
         <div>
@@ -97,13 +92,13 @@
               <span>📍</span> Cjon. Francisco X. Clavijero No. 234, Boca del Río, Ver.
             </li>
             <li class="flex items-center gap-2">
-              <span>📞</span> (+52) 229-229-0382
+              <span>📞</span> (+52) 229-247-7651
             </li>
             <li class="flex items-center gap-2">
               <span>✉️</span> contacto@topicktrucks.com
             </li>
             <li class="flex items-center gap-2">
-              <span>🕒</span> Lunes a Viernes: 8:00 am - 6:00 pm
+              <span>🕒</span> Lunes a Viernes: 8:00 am - 5:00 pm
             </li>
           </ul>
         </div>
@@ -117,22 +112,6 @@
             <li><a href="#servicios" class="hover:text-brand-600 transition">Diagnóstico de motor</a></li>
             <li><a href="#contacto" class="hover:text-brand-600 transition">Solicitar mantenimiento</a></li>
           </ul>
-        </div>
-
-        <!-- Redes sociales -->
-        <div>
-          <h4 class="text-lg font-semibold text-slate-700 mb-4">Síguenos</h4>
-          <div class="flex space-x-4 text-slate-600">
-            <a href="#" class="hover:text-cyan-400 transition flex items-center gap-1">
-              <i class="fab fa-facebook-f"></i> Facebook
-            </a>
-            <a href="#" class="hover:text-pink-500 transition flex items-center gap-1">
-              <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="#" class="hover:text-blue-500 transition flex items-center gap-1">
-              <i class="fab fa-linkedin-in"></i> LinkedIn
-            </a>
-          </div>
         </div>
 
       </div>

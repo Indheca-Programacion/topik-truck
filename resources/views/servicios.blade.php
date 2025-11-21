@@ -22,7 +22,7 @@
 <section class="py-20 bg-white">
   <div class="container mx-auto px-4 max-w-4xl">
     <div class="flex flex-col md:flex-row items-center gap-8">
-      <img src="img/scr.jpg" alt="Mantenimiento de sistema SCR" class="rounded-2xl w-full md:w-1/2 h-64 object-cover shadow-md">
+      <img src="https://www.grupoherres.com.mx/wp-content/uploads/2019/03/limpiador-inyectores.jpg" alt="Mantenimiento de sistema SCR" class="rounded-2xl w-full md:w-1/2 h-64 object-cover shadow-md">
       <div class="md:w-1/2">
         <h2 class="text-3xl font-extrabold text-slate-800 mb-4">Mantenimiento de Sistema SCR</h2>
         <p class="text-slate-600 mb-4">
@@ -45,7 +45,7 @@
 <section class="py-20 bg-slate-50">
   <div class="container mx-auto px-4 max-w-4xl">
     <div class="flex flex-col md:flex-row-reverse items-center gap-8">
-      <img src="img/reparacion-mayor.jpg" alt="Reparaciones mayores de motor Diésel" class="rounded-2xl w-full md:w-1/2 h-64 object-cover shadow-md">
+      <img src="{{ asset('images/reparacionMayor.jpeg') }}" alt="Reparaciones mayores de motor Diésel" class="rounded-2xl w-full md:w-1/2 h-64 object-cover shadow-md">
       <div class="md:w-1/2">
         <h2 class="text-3xl font-extrabold text-slate-800 mb-4">Reparaciones Mayores</h2>
         <p class="text-slate-600 mb-4">
@@ -68,7 +68,7 @@
 <section class="py-20 bg-white">
   <div class="container mx-auto px-4 max-w-4xl">
     <div class="flex flex-col md:flex-row items-center gap-8">
-      <img src="img/diagnostico.jpg" alt="Diagnóstico de motor Diésel" class="rounded-2xl w-full md:w-1/2 h-64 object-cover shadow-md">
+      <img src="https://www.autoavance.co/wp-content/uploads/2021/09/unidad-de-control-de-motor-pruebas.jpeg" alt="Diagnóstico de motor Diésel" class="rounded-2xl w-full md:w-1/2 h-64 object-cover shadow-md">
       <div class="md:w-1/2">
         <h2 class="text-3xl font-extrabold text-slate-800 mb-4">Diagnóstico de Motor</h2>
         <p class="text-slate-600 mb-4">
