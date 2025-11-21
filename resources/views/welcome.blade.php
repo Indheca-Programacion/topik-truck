@@ -60,7 +60,7 @@
           <div class="aspect-[4/3] w-full rounded-3xl 
             bg-gradient-to-tr from-[#DC3545]/80 to-slate-100 
             shadow-soft border border-slate-200 p-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="grid xl:h-full xl:w-full grid-cols-1 sm:grid-cols-2 gap-4">
               
               <!-- Tarjeta 1: Motores atendidos -->
               <div class="rounded-2xl bg-white shadow-soft border border-slate-200 p-4 flex flex-col justify-between">
