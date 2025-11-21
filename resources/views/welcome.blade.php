@@ -129,7 +129,7 @@
           <div class="flex flex-col items-center text-center">
             <!-- Imagen del servicio -->
             <img
-              src="img/scr.jpg"
+              src="https://www.autoavance.co/wp-content/uploads/2025/07/sistema-scr-urea.jpg"
               alt="Mantenimiento de sistema SCR"
               class="rounded-2xl mb-4 h-40 w-full object-cover"
             />
@@ -150,7 +150,7 @@
           <div class="flex flex-col items-center text-center">
             <!-- Imagen del servicio -->
             <img
-              src="img/reparacion-mayor.jpg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDHAWy9s0tgrvhgazRReD-eUT2sDRRTcgYWg&s"
               alt="Reparaciones mayores de motor Diésel"
               class="rounded-2xl mb-4 h-40 w-full object-cover"
             />
@@ -171,7 +171,7 @@
           <div class="flex flex-col items-center text-center">
             <!-- Imagen del servicio -->
             <img
-              src="img/diagnostico.jpg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR88MylPmpfFMIBf7S_yC03eQM6rHfU062Aw&s"
               alt="Diagnóstico de motor Diésel"
               class="rounded-2xl mb-4 h-40 w-full object-cover"
             />
