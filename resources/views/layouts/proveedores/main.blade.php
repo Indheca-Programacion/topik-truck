@@ -16,7 +16,19 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-  
+    
+    <style>
+    #about {
+        width: 100%;
+        height: 70vh;
+        background: linear-gradient(to right, rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.6)),
+            url("{{ asset('images/fondo_proveedor.png') }}");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    </style>
+
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
