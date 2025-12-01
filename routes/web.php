@@ -6,12 +6,16 @@ use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\EmailSettingController;
+use App\Http\Controllers\ProveedoresController;
 
 use Illuminate\Support\Facades\Route;
 
+// PUBLIC
 Route::view('/', 'welcome')->name('home');
 Route::view('/contacto', 'contacto')->name('contacto');
 Route::view('/servicios', 'servicios')->name('servicios');
+Route::resource('/proveedores', ProveedoresController::class);
+
 
 Route::post('/contactar', function (\Illuminate\Http\Request $request) {
     $request->validate([
