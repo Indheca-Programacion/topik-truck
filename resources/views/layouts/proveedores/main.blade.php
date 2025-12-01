@@ -16,18 +16,28 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    
-    <style>
+
+  <style>
     #about {
+        position: relative;
         width: 100%;
         height: 70vh;
-        background: linear-gradient(to right, rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.6)),
-            url("{{ asset('images/fondo_proveedor.png') }}");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
+        overflow: hidden;
     }
-    </style>
+
+    #about::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("{{ asset('images/fondo_proveedor.png') }}") no-repeat bottom/cover;
+        filter: blur(2px);
+        transform: scale(1.1);
+    }
+
+  </style>
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
