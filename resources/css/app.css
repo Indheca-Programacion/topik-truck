@@ -15,7 +15,7 @@ body {
     width: 100%;
     height: 70vh;
     background: linear-gradient(to right, rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.6)),
-        url("http://localhost:8000/images/fondo_proveedor.png");
+        url("https://topiktrucks.com/images/fondo_proveedor.png");
 
     background-repeat: no-repeat;
     background-size: cover;
