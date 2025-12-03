@@ -58,24 +58,22 @@ class RegistroUsuarioController extends Controller
             ], 422);
         }
 
+        $user = User::findOrFail($request->id);
 
-        // $user = User::findOrFail($request->id);
-
-        // $user->forceFill([
-        //     'password' => Hash::make($request->password),
-        // ])->save();
+        $user->forceFill([
+            'password' => Hash::make($request->password),
+        ])->save();
 
         return response()->json([
             'message' => 'Contraseña del usuario con ID ' .
                         // $user->id . 
                         ' actualizada exitosamente.',
-            'user' => $request->all()
-
-            // [
-            //     'id' => $user->id,
-            //     'name' => $user->name,
-            //     'email' => $user->email,
-            // ],
+            'user' => 
+            [
+                'id' => $user->id,
+                'name' => $user->name,
+                'email' => $user->email,
+            ],
         ], 200);
     }
 }
