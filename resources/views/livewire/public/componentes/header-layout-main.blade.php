@@ -30,7 +30,7 @@
 
       <!-- Botón de acción escritorio -->
       <div class="hidden md:flex items-center gap-3">
-        <a href="#" class="inline-flex items-center rounded-xl bg-[#DC3545] px-4 py-2 text-sm font-semibold text-white shadow-soft hover:bg-[#DC3552]">
+        <a href="/login" class="inline-flex items-center rounded-xl bg-[#DC3545] px-4 py-2 text-sm font-semibold text-white shadow-soft hover:bg-[#DC3552]">
           Iniciar Sesión
         </a>
       </div>
@@ -43,7 +43,7 @@
         <a href="/" class="hover:text-[#DC3545] transition">Inicio</a>
         <a href="/servicios" class="hover:text-[#DC3545] transition">Servicios</a>
         <a href="/contacto" class="hover:text-[#DC3545] transition">Contacto</a>
-        <a href="#" class="inline-flex items-center rounded-xl bg-[#DC3545] px-4 py-2 text-sm font-semibold text-white shadow-soft hover:bg-[#DC3552] justify-center mt-2">
+        <a href="/login" class="inline-flex items-center rounded-xl bg-[#DC3545] px-4 py-2 text-sm font-semibold text-white shadow-soft hover:bg-[#DC3552] justify-center mt-2">
           Iniciar Sesión
         </a>
       </nav>
