@@ -66,7 +66,7 @@ class RegistroUsuarioController extends Controller
 
         return response()->json([
             'message' => 'Contraseña del usuario con ID ' .
-                        // $user->id . 
+                        $user->id . 
                         ' actualizada exitosamente.',
             'user' => 
             [

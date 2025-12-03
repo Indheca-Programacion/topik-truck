@@ -28,6 +28,7 @@ jobs:
             composer i
             npm i
             npm run build
+            php artisan migrate
 
             echo "✅ Despliegue completado en $HOSTNAME"
 
