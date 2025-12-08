@@ -1,5 +1,5 @@
 <x-app-layout>
-    <x-slot name="header">Clientes</x-slot>
+    <x-slot name="header"></x-slot>
 
     {{-- Botón Nuevo Cliente y Buscador --}}
     <div class="mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">

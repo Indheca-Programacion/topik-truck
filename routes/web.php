@@ -16,7 +16,6 @@ Route::view('/contacto', 'contacto')->name('contacto');
 Route::view('/servicios', 'servicios')->name('servicios');
 Route::resource('/proveedores', ProveedoresController::class);
 
-
 Route::post('/contactar', function (\Illuminate\Http\Request $request) {
     $request->validate([
         'nombre' => 'required|string|max:100',
@@ -27,13 +26,13 @@ Route::post('/contactar', function (\Illuminate\Http\Request $request) {
 })->name('contactar');
 
 Route::middleware(['auth'])->group(function () {
-    Route::resource('permisos', PermisoController::class);
+    Route::resource('permisos', PermisoController::class)->names('permisos');
     Route::resource('perfiles', PerfilController::class)->parameters([
         'perfiles' => 'perfil'
-    ]);
-    Route::resource('usuarios', UsuarioController::class);
-    Route::resource('clientes', ClienteController::class);
-    Route::resource('email_settings', EmailSettingController::class);
+    ])->names('perfiles');
+    Route::resource('usuarios', UsuarioController::class)->names('usuarios');
+    Route::resource('clientes', ClienteController::class)->names('clientes');
+    Route::resource('email_settings', EmailSettingController::class)->names('email_settings');
     Route::post('email-settings/test', [EmailSettingController::class, 'sendTest'])->name('email_settings.sendTest');
 
 });
