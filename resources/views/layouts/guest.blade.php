@@ -8,22 +8,26 @@
     <title>@yield('title', config('app.name', 'Laravel'))</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-gradient-to-br from-blue-500 to-cyan-400">
+<body class="bg-gradient-to-tl from-[#DC3545] via-[#DC3545]/90 to-[#DC3545]/70"
+>
 
-    <div class="min-h-screen flex flex-col sm:justify-center items-center pt-10">
-        <div>
+    <div class="min-h-screen flex flex-col sm:justify-center items-center pt-10 ">
+        <div class="-mt-[10rem]">
             <a href="/">
-                <img src="{{ asset('images/logo.png') }}" alt="Logo Altamar" width="100">
+                <img src="{{ asset('images/logo.png') }}" alt="Logo Altamar" width="300">
             </a>
         </div>
 
-        <div class="w-full sm:max-w-md mt-6 px-6 py-8 bg-white/10 backdrop-blur-2xl shadow-xl overflow-hidden sm:rounded-2xl text-white">
+        <div class="w-full sm:max-w-md mt-6 px-6 py-8 bg-white/10 backdrop-blur-2xl shadow-xl overflow-hidden sm:rounded-lg text-white">
             {{ $slot }}
         </div>
     </div>

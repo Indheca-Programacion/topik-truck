@@ -18,14 +18,14 @@
     />
 
   <style>
-    #about {
+    #hero {
         position: relative;
         width: 100%;
         height: 70vh;
         overflow: hidden;
     }
 
-    #about::before {
+    #hero::before {
         content: "";
         position: absolute;
         top: 0;
@@ -43,8 +43,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
 </head>
-  <body class="bg-slate-50 text-slate-800">
-
+<body class="bg-slate-50 text-slate-800">
     @livewire('public.componentes.header-layout-main')
 
     {{-- Contenido principal --}}

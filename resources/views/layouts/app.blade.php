@@ -8,13 +8,18 @@
     <title>@yield('title', config('app.name', 'Sistema Base Laravel'))</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireStyles
 </head>
-<body class="font-sans antialiased bg-gradient-to-br from-blue-500 to-cyan-400 text-white">
+<body class="font-sans antialiased bg-gradient-to-br ">
 
     <div x-data="{ open: false }" class="flex h-screen">
 
@@ -22,24 +27,20 @@
         <x-sidebar />
 
         {{-- Overlay móvil --}}
-        <div x-show="open" @click="open = false" class="fixed inset-0 bg-black/50 z-40 md:hidden"></div>
+        <div x-show="open" @click="open = false" class="fixed inset-0  z-40 md:hidden"></div>
 
         {{-- Contenido principal --}}
         <div class="flex-1 md:ml-64 flex flex-col">
 
             {{-- Botón hamburger móvil --}}
             <div class="md:hidden p-4">
-                <button @click="open = true" class="text-white text-2xl font-bold">&#9776;</button>
+                <button @click="open = true" class=" text-2xl font-bold">
+                     <span class="sr-only">Open sidebar</span>
+                        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                    </svg>       
+                </button>
             </div>
-
-            {{-- Page Heading --}}
-            @isset($header)
-                <header class="bg-white/20 backdrop-blur-md shadow-md">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-white font-semibold">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endisset
 
             {{-- Page Content --}}
             <main class="flex-1 p-6 bg-white/10 backdrop-blur-md rounded-xl mx-4 my-4">
@@ -47,6 +48,7 @@
             </main>
         </div>
     </div>
+    @livewireScripts
 
 </body>
 </html>
