@@ -42,9 +42,11 @@
                 </button>
             </div>
 
+            <x-header-dashboard />
+
             {{-- Page Content --}}
-            <main class="flex-1 p-6 bg-white/10 backdrop-blur-md rounded-xl mx-4 my-4">
-                {{ $slot }}
+            <main class="flex-1 p-6 rounded-xl mx-4 my-4">
+                @yield('content')
             </main>
         </div>
     </div>

@@ -1,7 +1,8 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="text-2xl font-semibold text-white">Editar Perfil</h2>
-    </x-slot>
+@extends('layouts.app')
+
+@section('title', 'Usuarios | Topick Trucks')
+
+@section('content')
 
     <div class="max-w-7xl mx-auto mt-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
         <form action="{{ route('perfiles.update', $perfil) }}" method="POST" class="lg:col-span-4 bg-white/20 backdrop-blur-md rounded-2xl shadow-lg p-6">
@@ -62,4 +63,4 @@
             </div>
         </form>
     </div>
-</x-app-layout>
+@endsection

@@ -1,7 +1,8 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="text-2xl font-semibold text-white">Perfiles</h2>
-    </x-slot>
+@extends('layouts.app')
+
+@section('title', 'Usuarios | Topick Trucks')
+
+@section('content')
 
     <div class="mb-4">
         <a href="{{ route('perfiles.create') }}" class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded transition">
@@ -39,4 +40,5 @@
             </tbody>
         </table>
     </div>
-</x-app-layout>
+@endsection
+

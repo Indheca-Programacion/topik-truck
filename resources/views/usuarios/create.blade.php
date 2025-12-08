@@ -1,9 +1,17 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="text-2xl font-semibold text-white">Crear Usuario</h2>
-    </x-slot>
+@extends('layouts.app')
 
-    <div class="max-w-lg mx-auto mt-6 bg-white/20 backdrop-blur-md rounded-2xl shadow-lg p-6">
+@section('title', 'Crear Usuario | Topick Trucks')
+
+@section('content')
+
+<x-card class="max-w-2xl">
+
+    {{-- Encabezado del card (slot nombrado) --}}
+    <x-slot:header>
+        <h2 class="text-xl font-semibold text-gray-700">Crear Usuario</h2>
+    </x-slot:header>
+
+    <div class="mt-6 border rounded  p-6">
 
         <!-- Mostrar errores generales -->
         @if ($errors->any())
@@ -16,16 +24,17 @@
             </div>
         @endif
 
-        <form action="{{ route('usuarios.store') }}" method="POST">
+        <form action="{{ route('usuarios.store') }}" method="POST" id="form-create-user">
             @csrf
+            <h3 class="text-lg font-semibold  mb-4">Datos del Usuario</h3>
 
             <!-- Nombre -->
             <div class="mb-4">
-                <label class="block font-medium text-white">Nombre</label>
+                <label class="block font-medium ">Nombre</label>
                 <input 
                     name="name" 
                     value="{{ old('name') }}" 
-                    class="w-full rounded-lg bg-white/20 text-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:border-cyan-300" 
+                    class="w-full rounded-lg bg-white/20  px-3 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:border-cyan-300" 
                 >
                 @error('name')
                     <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
@@ -34,12 +43,12 @@
 
             <!-- Email -->
             <div class="mb-4">
-                <label class="block font-medium text-white">Email</label>
+                <label class="block font-medium ">Email</label>
                 <input 
                     name="email" 
                     type="email" 
                     value="{{ old('email') }}" 
-                    class="w-full rounded-lg bg-white/20 text-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:border-cyan-300" 
+                    class="w-full rounded-lg bg-white/20 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:border-cyan-300" 
                 >
                 @error('email')
                     <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
@@ -48,11 +57,11 @@
 
             <!-- Contraseña -->
             <div class="mb-4">
-                <label class="block font-medium text-white">Contraseña</label>
+                <label class="block font-medium ">Contraseña</label>
                 <input 
                     name="password" 
                     type="password" 
-                    class="w-full rounded-lg bg-white/20 text-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:border-cyan-300" 
+                    class="w-full rounded-lg bg-white/20  px-3 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:border-cyan-300" 
                 >
                 @error('password')
                     <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
@@ -61,29 +70,33 @@
 
             <!-- Confirmar Contraseña -->
             <div class="mb-4">
-                <label class="block font-medium text-white">Confirmar Contraseña</label>
+                <label class="block font-medium ">Confirmar Contraseña</label>
                 <input 
                     name="password_confirmation" 
                     type="password" 
-                    class="w-full rounded-lg bg-white/20 text-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:border-cyan-300" 
+                    class="w-full rounded-lg bg-white/20  px-3 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:border-cyan-300" 
                 >
             </div>
 
-            <!-- Botones -->
-            <div class="flex items-center space-x-4 mt-6">
-                <button 
-                    type="submit" 
-                    class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-6 py-2 rounded-xl transition"
-                >
-                    Guardar
-                </button>
-                <a 
-                    href="{{ route('usuarios.index') }}" 
-                    class="text-white/70 hover:text-white hover:underline transition"
-                >
-                    Cancelar
-                </a>
-            </div>
+
         </form>
     </div>
-</x-app-layout>
+
+    <x-slot:footer>
+        <div class="flex justify-end mt-6">
+            <a href="{{ route('usuarios.index') }}"
+                class="inline-flex items-center px-4 py-2 bg-gray-300 rounded hover:bg-white/30 transition">
+                Cancelar
+            </a>
+            <button
+                type="submit"
+                form="form-create-user"
+                class="ml-4 inline-flex items-center px-4 py-2 bg-green-600 text-white rounded hover:bg-cyan-600 transition">
+                Guardar
+            </button>
+        </div>
+    </x-slot:footer>
+</x-card>
+
+
+@endsection

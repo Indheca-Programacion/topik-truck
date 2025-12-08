@@ -1,8 +1,8 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="text-2xl font-semibold text-white">Editar Permiso</h2>
-    </x-slot>
+@extends('layouts.app')
 
+@section('title', 'Usuarios | Topick Trucks')
+
+@section('content')
     <div class="max-w-lg mx-auto mt-6 bg-white/20 backdrop-blur-md rounded-2xl shadow-lg p-6">
         <form action="{{ route('permisos.update', $permiso) }}" method="POST">
             @csrf
@@ -29,4 +29,5 @@
             </div>
         </form>
     </div>
-</x-app-layout>
+@endsection
+
