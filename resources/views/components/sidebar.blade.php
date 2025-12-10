@@ -1,14 +1,14 @@
 {{-- Sidebar --}}
 <aside 
     :class="open ? 'translate-x-0' : '-translate-x-full'"
-    class="fixed top-0 left-0  z-50 w-64 h-full transition-transform -translate-x-full md:translate-x-0 bg-[#DC3545] border-r border-gray-200"
+    class="fixed top-0 left-0  z-50 w-64 h-full transition-transform -translate-x-full md:translate-x-0 bg-[#490812]  border-r "
     aria-label="Sidebar"
 >
     <div class="h-full flex flex-col justify-between  py-4 overflow-y-auto">
         <div>
-            <div class="flex flex-col items-center justify-center text-white mb-4">
+            <div class="flex flex-col items-center justify-center text-[#fef2f2]  mb-4 px-4 text-center">
                 <h1>Bienvenido</h1>
-                <p class="text-2xl font-semibold">{{ Auth::user()->name }}</p>
+                <p class="text-2xl font-semibold ">{{ Auth::user()->name }}</p>
             </div>
             <ul class=" font-medium">
             @auth
@@ -28,7 +28,7 @@
                 {{-- Mis Datos --}}
                 <div x-data="{ misDatosOpen: {{ request()->is('home*')  ? 'true' : 'false' }} }">
                     <button @click="misDatosOpen = !misDatosOpen"
-                        class=" px-3 py-3  hover:bg-red-700  w-full text-gray-100 text-left   flex justify-between items-center transition">
+                        class=" px-3 py-3  hover:bg-[#83182c]   w-full text-[#fef2f2] text-left   flex justify-between items-center transition">
                         <span class="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
@@ -54,7 +54,7 @@
                 {{-- Servicios --}}
                 <div x-data="{ serviciosOpen: {{ request()->is('home*')  ? 'true' : 'false' }} }">
                     <button @click="serviciosOpen = !serviciosOpen"
-                        class=" px-3 py-3  hover:bg-red-700  w-full text-gray-100 text-left   flex justify-between items-center transition">
+                        class=" px-3 py-3  hover:bg-[#83182c]   w-full text-[#fef2f2]  text-left   flex justify-between items-center transition">
                         <span class="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z" />
@@ -82,7 +82,7 @@
                 {{-- Usuarios --}}
                     <div x-data="{ usuariosOpen: {{ request()->is('usuarios*') || request()->is('perfiles*') || request()->is('permisos*') ? 'true' : 'false' }} }">
                     <button @click="usuariosOpen = !usuariosOpen"
-                        class=" px-3 py-3  hover:bg-red-700  w-full text-gray-100 text-left   flex justify-between items-center transition">
+                        class=" px-3 py-3  hover:bg-[#83182c]  w-full text-[#fef2f2]  text-left   flex justify-between items-center transition">
                                 <span class="flex gap-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.242 5.992h12m-12 6.003H20.24m-12 5.999h12M4.117 7.495v-3.75H2.99m1.125 3.75H2.99m1.125 0H5.24m-1.92 2.577a1.125 1.125 0 1 1 1.591 1.59l-1.83 1.83h2.16M2.99 15.745h1.125a1.125 1.125 0 0 1 0 2.25H3.74m0-.002h.375a1.125 1.125 0 0 1 0 2.25H2.99" />

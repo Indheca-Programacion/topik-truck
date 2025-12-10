@@ -1,4 +1,4 @@
-<header class="h-16  border-b shadow-md flex items-center justify-end px-6">
+<header class="h-16  flex items-center justify-end px-6 ">
 
     {{-- ACCIONES DERECHA --}}
     <div class="flex items-center gap-6">
@@ -21,7 +21,7 @@
                 <img src="https://ui-avatars.com/api/?name=User"
                     class="w-8 h-8 rounded-full border border-white/20">
 
-                <span class="text-sm font-medium">{{ auth()->user()->name ?? 'Usuario' }}</span>
+                <span class="text-sm text-[#490812] font-medium">{{ auth()->user()->name ?? 'Usuario' }}</span>
 
                 <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
@@ -33,17 +33,17 @@
             {{-- DROPDOWN --}}
             <div x-show="userMenu"
                 @click.away="userMenu = false"
-                class="absolute right-0 mt-2 w-40 bg-[#1e293b] border border-white/10 rounded-lg shadow-lg py-2 z-50">
+                class="absolute right-0 mt-2 w-40 bg-[#490812] border border-white/10 rounded-lg shadow-lg py-2 z-50">
 
                 <a href="#"
-                class="block px-4 py-2 text-sm text-gray-200 hover:bg-white/10 transition">
+                class="block px-4 py-2 text-sm text-[#fef2f2] hover:bg-white/10 transition">
                     Perfil
                 </a>
 
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
                     <button type="submit"
-                            class="w-full text-left px-4 py-2 text-sm text-gray-200 hover:bg-white/10 transition">
+                            class="w-full text-left px-4 py-2 text-sm text-[#fef2f2] hover:bg-white/10 transition">
                         Cerrar sesión
                     </button>
                 </form>

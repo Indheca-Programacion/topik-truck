@@ -12,8 +12,8 @@ class NavLink extends Component
 
     public $icon = null; // 👈 agregar ESTO
 
-    public string $baseClasses = 'block px-3 py-3  hover:bg-red-700 transition';
-    public string $activeClasses = 'bg-red-700';
+    public string $baseClasses = 'block px-3 py-3  hover:bg-[#83182c] text-[#fef2f2]  transition';
+    public string $activeClasses = 'bg-[#83182c] ';
 
     public function mount($href, $text, $icon = null)
     {

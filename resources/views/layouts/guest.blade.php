@@ -17,17 +17,17 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-gradient-to-tl from-[#DC3545] via-[#DC3545]/90 to-[#DC3545]/70"
+<body class="bg-gradient-to-tl from-[#DC3545] via-[#DC3545]/60 to-[#DC3545]/10"
 >
 
-    <div class="min-h-screen flex flex-col sm:justify-center items-center pt-10 ">
+    <div class="min-h-screen flex flex-col sm:justify-center items-center pt-10 px-4 sm:px-0">
         <div class="-mt-[10rem]">
             <a href="/">
                 <img src="{{ asset('images/logo.png') }}" alt="Logo Altamar" width="300">
             </a>
         </div>
 
-        <div class="w-full sm:max-w-md mt-6 px-6 py-8 bg-white/10 backdrop-blur-2xl shadow-xl overflow-hidden sm:rounded-lg text-white">
+        <div class="w-full  sm:max-w-md mt-6 px-6 py-8  shadow-2xl overflow-hidden sm:rounded-lg text-[#fef2f2]">
             {{ $slot }}
         </div>
     </div>

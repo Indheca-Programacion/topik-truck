@@ -16,6 +16,9 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->api(prepend: [
             Cors::class,
         ]);
+        $middleware->alias([
+            'clave.sistema' => \App\Http\Middleware\ValidarClaveSistema::class,
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //

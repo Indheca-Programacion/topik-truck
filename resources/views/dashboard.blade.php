@@ -3,7 +3,7 @@
 @section('title', 'Dashboard | Topick Trucks')
 
 @section('content')
-<div class="rounded-2xl bg-base-100 p-8 shadow-lg border border-base-200/60 flex gap-8 max-xl:flex-col transition-all duration-200">
+<div class="rounded-2xl bg-base-100 p-8 shadow-lg border border-[#ec474f] flex gap-8 max-xl:flex-col transition-all duration-200">
 
     <!-- Columna 1 -->
     <div class="flex flex-1 gap-8 max-md:flex-col">
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-           <div class="w-[1px] bg-gray-200"></div>
+           <div class="w-[1px] bg-[#ec474f]"></div>
 
 
         <!-- Servicios realizados -->
@@ -53,7 +53,7 @@
 
     </div>
 
-    <div class="w-[1px] bg-gray-200"></div>
+    <div class="w-[1px] bg-[#ec474f]"></div>
 
     <!-- Columna 2 -->
  <div class="flex flex-1 gap-8 max-md:flex-col">
@@ -78,7 +78,7 @@
             </div>
         </div>
 
-        <div class="w-[1px] bg-gray-200"></div>
+        <div class="w-[1px] bg-[#ec474f]"></div>
 
         <!-- En proceso -->
         <div class="flex flex-1 flex-col gap-3">

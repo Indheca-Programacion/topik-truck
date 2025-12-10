@@ -28,5 +28,9 @@ Route::post('/data', function (Request $request) {
     ], 201);
 });
 
-Route::post('/register', [RegistroUsuarioController::class, 'store']);
-Route::post('/update-password-user', [RegistroUsuarioController::class, 'update']);
+Route::middleware('clave.sistema')->group(function () {
+
+    Route::post('/register', [RegistroUsuarioController::class, 'store']);
+    Route::post('/update-password-user', [RegistroUsuarioController::class, 'update']);
+
+});
